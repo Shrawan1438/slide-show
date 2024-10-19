@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 46%, 95%) ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 1200px;
+    height: 600px;
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.box1{
+ background-color:  hsl(263, 55%, 52%);
+ grid-column: 1/span 2;
+}
+.box2{
+    background-color: hsl(217, 19%, 35%);
+
+}
+.box3,.box4{
+    background-color:  hsl(0, 0%, 100%);
+}
+.box3{
+    grid-column: 4/5;
+    grid-row: 1/span 2;
+}
+.box5{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/span 2;
+}
